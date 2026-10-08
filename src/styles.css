@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #ff5e62;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input fields */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+/* Input focus */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #ff5e62;
+}
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+/* Buttons */
+button {
+    flex: 1;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #ff5e62;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* Submit button hover */
+button:hover {
+    background-color: #e94b50;
+}
+
+/* Reset button */
+.reset-btn {
+    background-color: #555;
+}
+
+/* Reset button hover */
+.reset-btn:hover {
+    background-color: #333;
+}
+
+/* Message area */
+#message {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Success message */
+.success {
+    padding: 15px;
+
+    background-color: #d4edda;
+    color: #155724;
+
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+
+    line-height: 1.6;
+
+    font-weight: bold;
+}
+
+/* Thank you text */
+.success span {
+    font-weight: normal;
+}
+
+/* Order details */
+.success small {
+    font-weight: normal;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}

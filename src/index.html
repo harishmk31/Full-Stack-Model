@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Food Ordering</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🍔 Online Food Ordering</h1>
+
+        <form id="orderForm">
+
+            <label>Customer Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label>Phone Number</label>
+            <input type="text" id="phone" placeholder="Enter 10-digit phone number">
+
+            <label>Food Item</label>
+            <select id="food">
+                <option value="">Select Food Item</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Burger">Burger</option>
+                <option value="Biryani">Biryani</option>
+                <option value="Dosa">Dosa</option>
+            </select>
+
+            <label>Quantity</label>
+            <input type="number" id="quantity" min="1" placeholder="Enter quantity">
+
+            <label>Delivery Address</label>
+            <textarea id="address" rows="4" placeholder="Enter delivery address"></textarea>
+
+            <label>Payment Method</label>
+            <select id="payment">
+                <option value="">Select Payment Method</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+                <option value="UPI">UPI</option>
+                <option value="Card">Card</option>
+            </select>
+
+            <div class="buttons">
+
+                <button type="submit">
+                    Place Order
+                </button>
+
+                <button type="reset" id="resetButton" class="reset-btn">
+                    Reset
+                </button>
+
+            </div>
+
+        </form>
+
+        <!-- Success message appears here -->
+        <div id="message"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
